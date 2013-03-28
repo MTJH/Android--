@@ -1,0 +1,514 @@
+1、360新版特性界面源代码
+实现了360新版特性界面的效果，主要涉及到Qt的一些事件处理与自定义控件。但源码好像是c++。
+
+2、aidl跨进程调用
+服务端onBind暴露，然后客户端bindService得到aidl对象
+
+3、UI设计之 仿做蘑菇街UI设计 源码
+包含viewflipper 用来显示一个展示幻灯片banner 用到了OnGestureListener,OnTouchListener接口。
+4、Android 程序的安装、卸载和更新
+通过Intent机制，调出系统安装应用/卸载应用，直接调用安装接口，
+
+5、Android有未接来电后处理(判断未接来电)
+继承PhoneStateListener后,当手机的状态改变后将会触发onCallStateChanged.手机的状态分为CALL_STATE_RINGING(响铃中
+
+),CALL_STATE_IDLE(空闲),CALL_STATE_OFFHOOK(忙音)。
+
+6、Android与js交互
+webview可以通过loadUrl()这个函数对html上的js进行调用同时传参（js需要参数） 这样就可以向html传值了。继承
+
+WebChromeClient类，分别使用Android的内置控件重写了Js中对应的对话框，就是说对js中的对话框做处理了。
+
+7、Android远程登录含有loading登录效
+通过使用Handler实现远程登陆功能以及效果,使用Socket以及DataOutputStream、DataInputStream 实现登陆判断,代码含注
+
+册界面、服务器响应。
+
+8、android在wifi下手机与电脑的socket通信
+手机作为服务端，电脑使用MFC编程作为客户端，原理是，手机建立一个ServerSocket，并获取自己的ip地址和端口port；然后
+
+电脑通过socket连接手机的ip：port。熟悉c++的人可以测试。
+
+9、Android之Wifi学习教程
+主要讲解了四个类ScanResult,wifiConfiguration,WifiInfo,WifiManager的使用方法。
+
+10、Android之用PopupWindow实现弹出菜单
+使用了popupWindow窗体轻松实现了菜单很难实现的界面。多级菜单中包含了子菜单。
+很有学习价值。
+
+11、Android自动开关机实现
+通过BroadcastReceiver 实现自定义消息。
+
+12、Android中监听电话状态
+Android在电话状态改变是会发送action为android.intent.action.PHONE_STATE的广播，而拨打电话时会发送action为
+
+android.intent.action.NEW_OUTGOING_CALL的广播.
+
+13、Android自动发送短信
+sendTextMessage方法中第一个参数表示短信的目的电话号码，第二个参数表示短信服务中心号码，如果为null则使用默认的短
+
+信服务中心号码。第三个参数表示短信内容，第四个参数表示发送短信结果内容，第五个参数表示发送短信到目的地址后的回复
+
+信息。
+
+14、BrewClock倒计时
+使用CountDownTimer这个记录下载时间类实现计数。将后台线程的创建和Handler队列封装成为了一个方便的类调用。
+
+15、FiveChess五子棋
+通过一个自定义类 继承SurfaceView 实现界面，扩展了 Const, SurfaceHolder.Callback, Runnable等接口。
+
+16、DialogShow
+一个极其简单的Dialog例子
+
+17、dialog去除边框代码
+看标题就应该知道，是一个对话框的外观效果的例子。
+
+18、BOOK看遍所有UI控件
+一个例子实现了Android 里面所有的UI控件
+
+19、奇艺高清UI界面源代码
+一款很好看的界面，有首页，分类，搜索，我的资料，更多。分别实现了贴图轮换，界面阙套，以及多标签，轮换动画等特效。
+
+从这代码中可以学习到界面布局，理解BaseAdapter适配器的作用。主要是UI设计，具体的看代码哟。
+
+20、hotel宾馆系统
+一款有java实现的宾馆系统，学习Java的可以看下，学习Android的童靴飘过。
+
+21、OssSystem（OA系统图书管理简单版）
+简单的实现了图书管理的系统，主要还是UI设计，其中封装了一个类与服务器交流。
+
+22、QQ_UI之分类菜单DEMO
+ListView内嵌GridView的实现。
+
+23、从android中调用web service的源码
+详细见代码（简单）
+
+24、从网络上获取图片
+主要通过InputStream，FileOutputStream，HttpURLConnection实现。
+
+25、动画效果 translate、scale、alpha、rotate 切换Activity动画 控件位置调整
+用四个4个TextView 实现了不同的动画效果
+
+26、抖动窗口
+通过Animation类 实现 编辑框的抖动
+
+27、QQ的登录界面 源代码
+主要是UI设计，在布局文件中实现。
+28、tablelogin（登陆界面）
+主要是UI设计，含登陆，注册等界面。
+
+29、多点缩放字体
+通过setTouchListener监听实现多点消息，然后效果实现。
+
+30、ImageView 图片循环跑马灯的效果
+通过Animation 实现ImageView 的动画效果。
+
+31、ViewPager-实现左右两个屏幕的切换
+实现了ViewPager-实现左右两个屏幕的切换 动画效果（没有引用Animation）。
+
+32、LoginXml
+简单的 登陆界面设计。
+
+33、miniTwitter登录界面
+简单的 登陆界面设计。
+
+34、VIEW双缓冲与SurfaceView比较
+如题。
+
+35、毕业设计优秀论文
+内容包括移动办公毕业论文，基于Android的移动公交查询系统设计与实现，基于Android平台的3G气象软件，基于Android平台
+
+的星座查询软件设计，基于android手机平台的吃豆人游戏设计与开发。
+
+36、超爽的android抽屉效果
+写了一个继承LinearLayout的类实现抽屉效果。可以从本例中学习到一些自定义控件。
+
+37、Android程序如何升级
+详细见文档。
+
+38、OPENG开发的示例代码
+C版 详细见代码。
+
+39、MineSweeper
+Java实现的扫雷游戏（经典）。详细见代码。
+
+40、TankWar坦克大战
+有Java实现的坦克大战。详细见代码。
+
+41、多级PopupWindow的小demo
+很好的学习了PopupWindow。
+
+42、个人消费记录软件
+很好的学习了操作数据库实现消费记录。
+
+43、仿优酷Android客户端图片左右滑动（自动滑动）
+JDK中的多线程并发库：ScheduledExecutorService的使用，用它实现的每两秒滑动一次图片，大家也可以用其它方式实现。
+
+Handler+Message机制更新UI。
+
+44、高仿基于android2.2(Froyo)的Contacts
+实现了对联系人进行操作，详细见代码。
+
+45、Android防止内存溢出浅析
+对防止内存溢出 总结了几条。
+
+46、换肤 程序
+详细见代码，非常简单。
+
+47、仿iphone 气泡短信 DEMO
+ListAdapter 实现，详细见代码。
+
+48、渐入渐出动画 无闪烁 无黑底 Demo
+如题，详细见代码。
+
+49、高仿 WIN8系统 磁贴点击下沉倾斜效果源码
+如题，详细见代码。
+
+50、结合html5jscss测试程序附源码
+emoJavaScriptInterface类为js调用android服务器端提供接口 android
+作为DemoJavaScriptInterface类的客户端接口被js调用调用的具体方法在DemoJavaScriptInterface中定义： 例如该实例中
+
+的clickOnAndroid。详细见代码。
+
+51、简单的订机票系统源码
+用调用webservice获取xml，将获得xml再解析出来
+
+52、获取Android系统程序信息
+如题，详细见代码。
+
+53、加载网页进度条
+标题栏显示网页标题并且滚动，并且用进度条显示网页的加载进度(重新自定义标题栏。详细见代码。
+
+54、仿大众点评源码
+只是简单的实现了UI,没有与服务器交流。学好Ui非常好的例子。
+
+
+55、android获取网络数据到本地并查看
+详细见文档。
+
+56、仿QQ微信登录界面
+学习UI非常好的例子，只是UI登陆注册等设计，详细见代码。
+
+57、基于socket通讯的文件续传
+基于socket通讯的文件续传，android基于socket通讯的文件续传。详细见代码。
+
+58、监控别人的行踪
+分别用GPS,google,baidu等定位行踪。
+
+59、仿UCWEB界面源码
+详细见代码。
+
+60、仿新版人人的效果
+非常好学习界面例子，详细见代码。
+
+61、仿ireader书架
+详细见代码。
+
+62、Android模仿乐淘的应用程序分析源码
+详细见代码。
+
+63、平台水波效果
+详细见代码。
+
+64、Android拍照上传代码样例
+如题，见代码。
+
+65、模仿微信导航页效果源码
+前面已经出现过，详细见代码。
+
+66、拖动 Button 显示效果
+一个button按钮 可以被拖动到任意位置，主要是通过Ontouch消息实现。
+
+67、嵌套TabHost示例
+对学习TabHost非常好的例子
+
+68、开发 API人脸检测实例教程
+通过两个主要的API，Android提供了一个直接在位图上进行脸部检测的方法，这两个API分别是
+
+android.media.FaceDetector和android.media.FaceDetector.Face，已经包含在Android官方API中。
+
+69、强行结束APP进程的方法
+android.os.Process.killProcess(android.os.Process.myPid());
+或System.exit(0);
+
+70、精仿QQ设置界面
+模仿了精仿QQ设置界面，学习界面的好例子。详细见代码。
+
+71、图片阴影效果和影子效果
+自绘实现。详细见代码。
+
+72、天天动听 半透明Menu效果
+自定义实现，详细见代码。
+
+73、通过手势实现的缩放处理
+前面已讲。
+
+74、开发之 SD卡的使用
+详细见文档。
+
+75、模仿engadget菜单
+使用TabHost实现的engadget菜单，详细见代码。
+
+76、模仿UC等软件启动画面加载时闪烁点的样式
+前面有类似。详细见代码。
+
+77、调用Android中的软键盘
+学习了InputMethodManager和EditView类。详细见代码。
+
+78、网络通信的六种方式示例代码
+针对TCP/IP的Socket、ServerSocket
+针对UDP的DatagramSocket、DatagramPackage
+针对直接URL的HttpURLConnection
+Google集成了Apache HTTP客户端，可使用HTTP进行网络编程
+使用Web Service。Android可以通过开源包如jackson去支持Xmlrpc和Jsonrpc,另外也可以用Ksoap2去实现Webservice
+直接使用WebView视图组件显示网页
+
+79、客户端连接服务器并交互实例
+如题，详细见代码。
+
+80、商情商灵商测试系统源代码
+主要使用了Sqlite数据库和listview.gridview控件的配合使用及其它控件
+
+
+81、口袋微博 服务器 客户端代码
+封装了一个Socket的类与服务的交互信息，自定了协议规则实现了客户端的对相册，日子等数据库的操作，功能有照相以及上
+
+传照片，登陆判断以及日子管理/注册等等，是学习的好例子。详细见代码。
+
+82、悬浮Activity并可拖动(访悬浮歌词)
+学习WindowManager、.LayoutParams类了。
+
+83、一个登陆和注册界面
+详细见代码。
+
+84、用户注册，登录的简单实现
+85、一个简单登录的DEMO
+86、一个简单注册界面
+前面已经涉及。
+
+87、原来PATH的菜单效果如此简单。布局+TranslateAnimation搞定
+值得一提的是 interpolator的使用，PATH中使用了OvershootInterpolator以及AnticipateInterpolator。interpolator
+
+被用来修饰动画效果，定义动画的变化率，可以使存在的动画效果可以 accelerated(加速)，decelerated(减速),repeated(
+
+重复),bounced(弹跳)等。
+
+88、五种不同的Toast效果
+很好的学习了Toast类。详细见代码。开发可借鉴。
+
+89、中文天气预报程序
+Google天气预报的AIP。例如：http://www.google.com/ig/api?&weather;=城市名（中文全拼)，我发现在模拟器上面返回的
+
+结果和在pc上返回的结果不太一样，pc上有中文的，android模拟器上没有的。详细见代码。
+
+90、一个短信应用源码
+详细见代码。
+
+91、基于股票的一个Android应用
+详细见代码。
+
+92、演化理解 Android 异步加载图片
+Handler+Runnable模式
+Handler+Thread+Message模式
+Handler+ExecutorService(线程池)+MessageQueue模式
+Handler+ExecutorService(线程池)+MessageQueue+缓存模式
+详细见代码。
+
+
+93、在Android远程上传以及下载图片---XFire框架
+处理类集中在MyWebServiceHelper，它实现了远程获取和上传的细节功能。
+里面有个FileOperate.java类，这个类负责对文件操作。
+详细见代码。
+
+94、指南针定位源码
+开发一个检测方向的传感器，程序检测到手机顶部绕z转过的多少度，让指南针图片反转过多少度
+
+95、语音识别，根据语音，执行对应操作
+详细见文档，只是一种思路。
+
+96、引用第三方库的方法
+详细见代码。
+
+97、一个支持暂停下载断点续传的源码
+List<Map<String, Async>> listTask用来存放每一个正在进行的下载任务以及管理任务
+重写了AsyncTask类用于执行下载
+
+98、植物大战僵尸（简单版）
+详细见代码哟。
+
+99、一款查询软件（身份证号，号码归属等）源代码
+此实例非常好，非常使用，在开发中可以借鉴啊。详细见代码。
+
+100、新浪、腾讯、网易、搜狐微博OAuth认证整合Android版
+很好的学习OAuth认证，掌握了帐号安全可靠。详细见代码。我们公司自己定义了一种规则，原理都是参考他们的。
+
+101、微博客户端源代码
+102、weibo4andriod
+原理都差不多，详细搜索百度。
+
+103、Android游戏源码——忍者快跑
+详细见代码哟。
+
+104、使用Vitamio打造自己的Android万能播放器——在线播放
+虽然Android已经内置了VideoView组件和MediaPlayer类来支持开发视频播放器，但支持格式、性能等各方面都十分有限，这
+
+里与大家一起利用开源项目Vitamio来打造属于自己的
+Android万能播放器！自己百度搜索吧。
+
+105、音乐播放器源码（含歌词显示）
+106、SeeJoPlayer（播放器 简单）
+107、高仿多米音乐播放器
+108、开发源码分享之在线音乐播放器完整项目
+详细查看源码，文档就自己百度吧。不过像这些在线音乐的，他推荐一款开源的吧，很经典。
+看下面开源的哟。
+
+
+
+以下是开源项目（都在下载包中）：
+
+1、andbatdog电池监控 难度系数最小
+Android Battery Dog 是 Android 平台上用来监控电池电量的服务软件，它生成电池记录文
+
+件：/sdcard/BatteryDog/battery.csv ，该文件包含时间、电量信息、温度和电压以及一些简单的图形。
+项目就四个源码文件：
+BatteryDog_Service
+继承了服务Service（后台运行和跨进程访问）
+创建了一个线程负责输出信息到文件
+注册了广播接收器ACTION_BATTERY_CHANGED
+BatteryDog
+继承了Activity 布局battery_dog 文件
+主要负责启动/关闭服务Service 和分析数据然后相关控件显示出来
+BatteryGraph
+继承了Activity 动态布局
+显示相关画面
+Log 负责输出显示信息
+
+2、Droid Wall 手机防火墙
+Droid Wall - Android Firewall 是一个类似于 Linux 下的 iptables 的 Android 手机防火墙软件，允许你限制某些应用
+
+访问数据网络，包括 2G/3G 以及 Wi-Fi。
+项目共六个文件：
+Api 包含共享的编程接口。处理所有ip（可用）的“沟通”这个类别。 这是很重要的类。
+BootBroadcast 广播接收机，设置在系统启动时的iptables规则。这是必要的，因为这些规则是不持久的。
+HelpDialog对话框中显示的“帮助”菜单选项被选中时。
+MainActivity 主界面 功能实现部分
+PassDialog对话框中显示要求输入密码。
+StatusWidget 构件实现的ON / OFF 部件状态
+
+
+3、jchat4android手机聊天程序 （内含开发文档）
+Android jChat 是一个 Android 手机上基于位置的聊天软件，采用P2P通讯机制。
+为了编译jChat，你要使用Eclipse创建一个新的Android项目，然后添加外部JAR和移动的jChat目录选择到libs目录
+
+JadeLeapAndroid.jar库。jChat使用了的MapView访问谷歌地图数据。
+本项目有25个目标文件。项目里面有代码注释以及开发文档。
+4、zz-doctor中医大夫助理信息系统
+辅助中医大夫储备药方、药名药理备查。让大夫能腾出精力集中诊断分析, 而不必消耗精力去记忆琐碎的细节。平时有空方便时
+
+自己录入储备或完善经验方。 更有利于传承。
+系统架构设计:1. PDA: GUI(Android) +Embedded DB (SQLite) ;2. (可配置)定期提示大夫备份数据到附加储存卡。
+本项目有17个目标文件。
+DbHelper 负责数据库的管理 功能有 执行sql语句 以及 升级等
+ZZ 程序全局类 继承Application
+MedicineDetail 医药详情介绍
+MedicineQuery 医药的查询
+RxRecipeDetail 接收方详情
+RxRecipeDetailEdit 接收方编辑详情
+WelcomeRxRecipeQuery 欢迎接收方查询
+IdentifiedString 标识结构类
+IdentifiedAutoCompleteTextView 自动匹配标识的信息
+IdentifiedStringAdapter 标识信息适配器
+UnitAdapter 单位组适配器
+ZzUtil 单位类
+MedicineSQLBuilder 医药数据库管理类
+RecipeMedicineMapSQLBuilder 接收方医药信息对应的数据库类
+SQLBuilder 数据库编辑器 根据参数选择不同的编辑方式 含main方法
+SubjectSQLBuilder 项目数据库的编辑器
+
+由上分析可以得出，该软件实现了数据库的操作，界面布局不复杂。
+
+
+
+5、一款查询软件（身份证号，号码归属等）源代码 (个人觉得这是一款开源软件)
+此实例非常好，非常使用，在开发中可以借鉴啊。
+本项目有24个目标文件。
+BaseActivity 头部bar的布局
+BaseLayout 头部bar的布局
+DataListHolder 就两个成员 ImageView TextView 你说干嘛呢
+ItemAdapter 继承适配器
+QueryAddress 继承BaseActivity 实现地址查询
+QueryIDCard 继承BaseActivity 实现身份证查询
+QueryPhone 继承BaseActivity 实现手机号查询
+SmallToolsActivity继承BaseActivity 实现主界面布局
+Splash 继承Activity 实现闪烁延时效果
+UpdateApp 一个确定版本信息升级的类
+ApiImpl Api接口 实现了地址查询 身份证查询 手机信息查询 更新信息查询 网络请求的功能
+AddressInfo 定义了一个地址信息结构类
+AppUpdateInfo定义了一个更新信息结构类
+IDCardInfo 定义了一个身份证结构类
+NumberItem定义了一个帐号结构类
+PhoneInfo 定义了一个手机信息结构类
+AppInfoHelpr 定义了一个程序信息 得到版本信息，版本名
+Constants 定义了一个公用静态变量存放类
+DeviceHelper 定义了一个设备信息类 主要功能有获取尺寸 读取手机号
+HttpClientHelper 定义了一个服务请求类，实现与服务器的交流。
+HttpException 继承 Exception 实现了输出异常信息
+HttpPostParameter 实现了参数信息的设置
+HttpResponse 消息的响应
+InternetHelper 内部帮助 可以湖的网络是否可用
+
+由上分析可以得出，该软件只是实现了与服务器请求信息，以及信息显示。界面布局简单。
+
+
+
+6、Zirco-browser：超越海豚的开源浏览器
+Zirco是Android开源的替代浏览器。
+说明：如果已卸载系统自带浏览器，使用Zirco Browser的书签功能可会会出现崩溃的情况。
+基本的浏览器功能（书签，历史，下载...)、无限的选项卡、交通方便的书签、开幕式和闭幕式的简易制表符、从传统的
+
+Android浏览器的书签导入、可设置为默认浏览器、AD -受体阻滞剂（重要提示：了解更多）。 换句话说，zirco是一个
+
+Android的开源替代浏览器,功能很强大,除常见的功能外,还支持自定义搜索引擎、自定义usergent、支持导入火狐的书签、页
+
+面内查找、主页自定义、地址栏搜索、插件支持、无限制的选项卡浏览，左右循环滑动切换；同时支持屏蔽广告；功能可以说很
+
+多都是首创,我最喜欢的还是自定义搜索,终于也可以在手机上使用google自定义搜索了,应用自带中文,不过设置中含有部分英
+
+文。
+本项目有81个目标文件。
+
+
+
+7、开源项目pedometer
+Pedometer应用用于记录你每天走路步数的。尽管记录不一定精准，但是从这个项目中，可以学习几个不同的技术：加速器交互
+
+、语音更新、后台运行服 务等。
+本项目有16个目标文件。
+CaloriesNotifier 继承接口StepListener, SpeakingTimer.Listener
+能量通知，实现步伐监听，说话监听
+DistanceNotifier 继承接口StepListener, SpeakingTimer.Listener
+距离通知，计算并显示走过的路程。
+PaceNotifier 继承接口StepListener, SpeakingTimer.Listener
+步伐通知，计算和显示速度（步/分钟），处理输入所需的步伐，并通知用户，如果他/她走快或慢。
+Pedometer 主界面
+PedometerSettings 设置属性自定义类
+Settings 设置界面
+SpeakingTimer 说话时间
+反复监听所有对象呼吸。定义由用户设置的时间间隔。
+SpeedNotifier 速度通知
+计算和显示速度（步/分钟），处理输入所需的步伐，并通知用户，如果他/她走快或慢。用途计算速度的步伐和步长的产品。
+StepBuzzer 步骤蜂鸣器
+一步检测时震动。通常情况下，这是不重视，用于调试目的。
+StepDetector步骤探测器
+检测步骤，并通知所有听众
+StepDisplayer 步骤显示
+计数步骤提供的步骤检测，并通过当前的步数的活动。
+StepListener 步骤监听
+StepService 步骤服务
+BodyWeightPreference
+StepLengthPreference
+都是对EditMeasurementPreference 继承 只允许浮点数
+EditMeasurementPreference 继承EditTextPreference
+它可以处理公制/英制设置。
+
+这款软件的关键点是类StepService，喜欢的话可以看源码好好研究。
